@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>my movie archive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+
+        * {
+            font-family: 'Hahmlet', serif;
+        }
+
+        .mytitle {
+            background-color: aquamarine;
+            color: white;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://post-phinf.pstatic.net/MjAyMTAxMDVfMTk2/MDAxNjA5ODE5OTI0OTUy.VcVW9AVCCNpQEqK5LsJ4kTMuPwI3GkmlGlkryYKAvrAg.k_1Idy-muUKn6Da93egbDledFdFeEVrxmPU8iJ2KH5sg.JPEG/215645_365037_5958_%281%29.jpg);
+            background-position: center;
+            background-size: contain;
+
+        }
+
+        .mytitle>button {
+            width: 200px;
+            height: 50px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+
+        .mytitle>button:hover {
+            border: 3px solid white;
+
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .mycards {
+            width: 1200px;
+            margin: 20px auto 20px auto;
+        }
+
+        .mypost {
+
+            width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0px 0px 3px 0px gray;
+        }
+
+        .mybtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .mybtn > button{
+            margin-right: 10px;
+        }
+        ]
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>my movie archive</h1>
+        <button>영화 기록들</button>
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">url</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">comment</label>
+        </div>
+
+        <div class="mybtn">
+            <button type="button" class="btn btn-dark">record</button>
+            <button type="button" class="btn btn-outline-dark">close</button>
+
+        </div>
+    </div>
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20180912_118/1536714294340kLm2Y_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">스타 이즈 본(2018) </h5>
+                        <p class="card-text">나도 몰랐던 내 안의 빛을 찾아낸 그대.. 우리 모습 이대로 영원히 기억할 거야..</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">OST부터 모든 것이 완벽한 나의 인생 영화</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20230126_212/1674712069217fLf3K_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">러브레터(1999)</h5>
+                        <p class="card-text">"가슴이 아파 이 편지는 차마 보내지 못하겠습니다. 이 추억들은 모두 당신 거예요"</p>
+                        <p>⭐⭐⭐⭐</p>
+                        <p class="mycomment">오겡끼데스까- 이 한마디로 모든 것을 표현</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20171222_56/1513906341368blx3Q_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">코코(2018)</h5>
+                        <p class="card-text">영원히 기억하고 싶은 황홀한 모험이 시작된다! 과연 '죽은 자들의 세상'에 숨겨진 비밀은?</p>
+                        <p>⭐⭐⭐⭐</p>
+                        <p class="mycomment">언제까지나 기억하고 싶은 영화</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20220920_244/1663641181915y0nJN_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">아바타(2009)</h5>
+                        <p class="card-text">판도라 행성에서 당신을 봅니다. I SEE U</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">감동적이고 아름다운 영상미로 황홀한 영화</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
